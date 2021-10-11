@@ -1,0 +1,154 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 854px;
+  background-image: url("https://i.pinimg.com/564x/21/0a/02/210a02d7ecc5667ae64ebb8de4324eba.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-logo {
+  width: 150px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  mix-blend-mode: luminosity;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 5px 0;
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+button,
+.button-jogar {
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 1rem;
+  border-radius: 5px;
+  border: 4px 6px double white;
+  font-size: 1rem;
+  background-image: url("https://i.pinimg.com/564x/68/d9/01/68d9015f94dd58c6e5ce4121ca8387a9.jpg");
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.6;
+}
+
+button:hover {
+  opacity: 0.97;
+  padding: 0.9rem 1.6rem;
+  border: 5px 4px double white;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+h2 {
+  color: white;
+}
+
+#carta-jogador,
+#carta-maquina {
+  width: 360px;
+  height: 520px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 10px;
+  border-radius: 33px;
+}
+
+#carta-jogador h3 {
+  text-align: center;
+}
+
+.carta-imagem {
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
+}
+
+.carta-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.carta-status {
+  height: 160px;
+  margin: 2rem;
+  color: white;
+  z-index: 2;
+  text-align: start;
+}
+
+.carta-status input {
+  margin: 10px 10px;
+}
+
+.resultado-final {
+  color: black;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weigth: bolder;
+  padding: 1rem;
+  border: 2px solid black;
+  background-image: url("https://i.pinimg.com/564x/68/d9/01/68d9015f94dd58c6e5ce4121ca8387a9.jpg");
+}
+
+.--spacing {
+  margin-left: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carta-texto {
+  z-index: 2;
+  position: absolute;
+  top: 14px;
+  left: 37px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#cartas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carta-status p {
+  margin-bottom: 2rem;
+}
+
+.mao {
+  color: black;
+  font-weight: 600;
+  z-index: 2;
+  top: 425px;
+  left: 270px;
+  position: absolute;
+}
