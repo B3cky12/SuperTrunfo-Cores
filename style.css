@@ -77,6 +77,12 @@ h2 {
   text-align: center;
 }
 
+#carta-jogador img, #carta-maquina img {
+  width: inherit;
+  height: inherit;
+  position: absolute
+}
+
 .carta-imagem {
   border: 1px solid black;
   height: 100px;
@@ -104,7 +110,7 @@ h2 {
   color: black;
   font-size: 2rem;
   text-transform: uppercase;
-  font-weigth: bolder;
+  font-weight: bolder;
   padding: 1rem;
   border: 2px solid black;
   background-image: url("https://i.pinimg.com/564x/68/d9/01/68d9015f94dd58c6e5ce4121ca8387a9.jpg");

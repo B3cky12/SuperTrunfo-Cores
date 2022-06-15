@@ -1,53 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Super Trunfo - Dia 8</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<html>
-
-<head>
-  <title>
-    Imersão Dev - Aula 08
-  </title>
-</head>
-
-<body>
-  <div class="container">
-    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo" alt="">
-    <h1 class="page-title">Super Trunfo das Cores</h1>
-    <button onclick="sortearCarta()" id="btnSortear">Sortear cartas</button>
-    <div id="box">
-      <form id="form">
-        <h2 id="msg">Regras do jogo: As cartas são sorteadas e distribuidas aos jogadores. A cada rodada, o jogador deve escolher um atributo, e vence a rodada quem possui o maior valor. Quando houver empate, o jogador deve escolher outro atributo, para desempatar. O perdedor entrega a carta abatida ao vencedor, que deve coloca-la no final de seu baralho, assim como a carta vencedora. Há duas cartas especiais no jogo, a Super-Trunfo, que ganha de todas as cartas exceto uma, a Anti-Trunfo. Vence o jogo quem tiver em mãos todas as cartas.</h2>
-        <div class="wrapper">
-          <div>
-            <div id="carta-jogador">
-              <img src="https://i.pinimg.com/564x/67/b6/fe/67b6fe574a82f9b710f1a908bef45e67.jpg" style=" width: inherit; height: inherit; position: absolute;">
-              <h3></h3>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodePen - Super Trunfo / Imersão Alura - Aula 8</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+      <img
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
+        class="page-logo"
+        alt="logo de Super Trunfo"
+      />
+      <h1 class="page-title">Super Trunfo das Cores</h1>
+      <button onclick="sortearCarta()" id="btnSortear">Sortear cartas</button>
+      <div id="box">
+        <form id="form">
+          <h2 id="msg">
+            Regras do jogo: As cartas são sorteadas e distribuidas aos
+            jogadores. A cada rodada, o jogador deve escolher um atributo, e
+            vence a rodada quem possui o maior valor. Quando houver empate, o
+            jogador deve escolher outro atributo, para desempatar. O perdedor
+            entrega a carta abatida ao vencedor, que deve coloca-la no final de
+            seu baralho, assim como a carta vencedora. Há duas cartas especiais
+            no jogo, a Super-Trunfo, que ganha de todas as cartas exceto uma, a
+            Anti-Trunfo. Vence o jogo quem tiver em mãos todas as cartas.
+          </h2>
+          <div class="wrapper">
+            <div>
+              <div id="carta-jogador">
+                <img
+                  src="https://i.pinimg.com/564x/67/b6/fe/67b6fe574a82f9b710f1a908bef45e67.jpg"
+                  alt="Carta do jogador aparece aqui"
+                />
+                <h3></h3>
+              </div>
+            </div>
+            <div>
+              <div id="carta-maquina" class="carta">
+                <img
+                  src="https://i.pinimg.com/564x/67/b6/fe/67b6fe574a82f9b710f1a908bef45e67.jpg"
+                  alt="Carta da máquina aparece aqui"
+                />
+              </div>
             </div>
           </div>
-          <div>
-            <div id="carta-maquina" class="carta"><img src="https://i.pinimg.com/564x/67/b6/fe/67b6fe574a82f9b710f1a908bef45e67.jpg" style=" width: inherit; height: inherit; position: absolute;"></div>
+          <div id="botoes">
+            <button
+              class="button-jogar"
+              type="button"
+              id="btnJogar"
+              onclick="jogar()"
+              disabled="false"
+            >
+              Jogar</button
+            ><button
+              type="button"
+              id="btnReset"
+              onclick="resetar()"
+              disabled="false"
+            >
+              Resetar
+            </button>
           </div>
-        </div>
-        <div id="botoes">
-          <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button><button type="button" id="btnReset" onclick="resetar()" disabled="false">Resetar</button>
-        </div>
-        <div id="resultado">
-        </div>
-      </form>
+          <div id="resultado"></div>
+        </form>
+      </div>
     </div>
-  </div>
-</body>
-
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
-</body>
+    <!-- partial -->
+  </body>
+  <script src="./script.js"></script>
 </html>
